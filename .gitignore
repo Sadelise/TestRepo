@@ -1,0 +1,9 @@
+**/.nb-gradle/
+build/
+gradlew
+.gradle/
+settings.gradle
+
+*.tmp
+gradle.properties
+.idea/
