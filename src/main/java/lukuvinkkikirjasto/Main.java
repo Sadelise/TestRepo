@@ -24,7 +24,7 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
         // Open connection to a database
-        Connection connection = DriverManager.getConnection("jdbc:h2:./database", "sa", "");
+//        Connection connection = DriverManager.getConnection("jdbc:h2:./database", "sa", "");
         
 //        try {
 //            // If database has not yet been created, insert content
@@ -40,7 +40,7 @@ public class Main {
 //        for (Book arg : test.testDatabase()) {
 //            System.out.println(arg);
 //        }
-        run(new ConsoleIO(), new BasicTipDao());
+//        run(new ConsoleIO(), new BasicTipDao());
     }
 
     public static void run(IO scanner, TipDao tipDao) {
