@@ -17,13 +17,19 @@ public class Test {
 
     @GetMapping("/")
     @ResponseBody
-    public List<Book> list(Model model) {
+    public List<Book> add(Model model) {
         if (bookRepository == null) {
             System.out.println("buu");
         }
         Book book = new Book("joo", "kirja");
         System.out.println(book);
         bookRepository.save(book);
+        return bookRepository.findAll();
+    }
+
+    @GetMapping("/show")
+    @ResponseBody
+    public List<Book> list(Model model) {
         return bookRepository.findAll();
     }
 }
